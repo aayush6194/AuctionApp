@@ -3,6 +3,7 @@
   border: 0;
   margin: 0px;
   font-family: "Source Sans Pro", sans-serif;
+
 }
 
 body {
@@ -13,6 +14,8 @@ body {
 .header {
   width: 100%;
 }
+
+
 
 button.bt {
   background: transparent;
@@ -291,7 +294,7 @@ input {
   border-radius: 15px;
 }
 
-.input:hover {
+.input:focus {
   width: 400px;
   transition: all linear 0.5s;
 }

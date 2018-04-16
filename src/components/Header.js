@@ -5,7 +5,7 @@ class Header extends React.Component {
   constructor(props){
     super(props);
   }
-  
+
   handleA(e) {
     this.props.modal();
   }
@@ -15,7 +15,7 @@ class Header extends React.Component {
     return (
       <div className="header">
         <img className="logoTop"
-        src="https://lh3.googleusercontent.com/nATi16BtV0jZNisDIYAFutlsnB_-2tuHJSCsmSf4ZHLm1v9PxVb2B8RkQ5-AGsf5AUZtDg=s170"/>
+        src="/logo.jpg"/>
         <MenuIcon navbar ={this.props.navbar}/>
       </div>
     );
@@ -23,7 +23,7 @@ class Header extends React.Component {
     else
       return(<div className="header">
         <img className="logoTop"
-        src="https://lh3.googleusercontent.com/nATi16BtV0jZNisDIYAFutlsnB_-2tuHJSCsmSf4ZHLm1v9PxVb2B8RkQ5-AGsf5AUZtDg=s170"/>
+        src="/logo.jpg"/>
       </div>);
   }
 }

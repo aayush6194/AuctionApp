@@ -1,14 +1,20 @@
 import React from 'react';
 
-function Data(props) {
-  this.style ="display: inline";
-  this.x = props.data.map((item)=><div class="listing"> <li className="item">{item}</li></div>);
-  return (
+class Data extends React.Component {
+  constructor(props){
+    super(props);
+    this.x = props.data.map((item)=><div class="listing"> <li className="item">{item}</li></div>);
+
+  }
+
+      render()  {
+ return (
     <div className="container">
-      <ul className="list" >{x}
+      <ul className="list" >{this.x}
         </ul>
     </div>
   );
+}
 }
 
 export default Data;

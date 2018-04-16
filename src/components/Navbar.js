@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 function Navbar(props) {
   var css = "sidebar " + props.display +"";
   return (

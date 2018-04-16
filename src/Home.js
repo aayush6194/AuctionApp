@@ -6,6 +6,7 @@ class Home extends React.Component {
     super(props);
     this.objects = [];
     this.state = { term: "", arry: ["poop","dog", "doggy"], required: ["poop","dog", "doggy"] };
+
   }
   componentDidMount() {
     // setInterval(()=>{
@@ -17,7 +18,7 @@ class Home extends React.Component {
     var ourRequest = new XMLHttpRequest();
     ourRequest.open("GET", API);
     ourRequest.onload = function() {
-      var ourData = JSON.parse(ourRequest.responseText);
+      //var ourData = JSON.parse(ourRequest.responseText);
       //    objects = (ourData).toFixed(2);
     };
     ourRequest.send();
@@ -29,10 +30,9 @@ class Home extends React.Component {
   }
 
   search() {
-    this.newArry = this.state.arry.filter((o)=>o.includes(this.state.term));
+    this.newArry = [this.state.arry.filter((o)=>o.includes(this.state.term))];
 
     this.setState({required : this.newArry});
-
 
   }
 
@@ -42,7 +42,7 @@ class Home extends React.Component {
         <center>
           <h1>Home</h1>
           <br />
-          <form>
+
           <input
             class="input"
             placeholder="poop"
@@ -50,7 +50,7 @@ class Home extends React.Component {
             onChange={this.handleChange.bind(this)}
           />
           <button class="bt search" onClick={this.search.bind(this)}>Search</button>
-          </form>
+
         </center>
         <Data data= {this.state.required}/>
       </div>
