@@ -7,7 +7,7 @@ import React from 'react';
         <h2>Lets Connect!</h2>
         <br />
         <div className="border">
-          <input placeholder="Type you email here..." type="text" />
+          <input className="footer-input" placeholder="Type you email here..." type="text" />
           <button class="bt join">Join</button>
         </div>
         <br />

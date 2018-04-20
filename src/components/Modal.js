@@ -5,7 +5,7 @@ function Modal(props) {
   return (
     <div className={css}>
       <div className="modal-box">
-        <b className="bt-close">X</b>
+        <b onClick={props.modal} className="bt-close">X</b>
       </div>
     </div>
   );

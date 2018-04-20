@@ -16,6 +16,12 @@ class Header extends React.Component {
       <div className="header">
         <img className="logoTop"
         src="/logo.jpg"/>
+        <span className="login-container" >
+        <input className="login" type="text" placeHolder="Email.."/>
+        <input className="login" type="password" placeHolder="Password.."/>
+        <button className="bt search" id="login">LOGIN</button>
+        </span>
+      
         <MenuIcon navbar ={this.props.navbar}/>
       </div>
     );
