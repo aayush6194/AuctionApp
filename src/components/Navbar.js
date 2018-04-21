@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 function Navbar(props) {
-  var css = "sidebar " + props.display +"";
+  var css = "sidebar1 " + props.display +"";
   return (
     <div>
       <div className={css}>

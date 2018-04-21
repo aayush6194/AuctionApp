@@ -136,8 +136,10 @@ button.bt {
 
 .modal-container {
   z-index: 2;
+
 }
 .modal-box {
+  z-index: 3;
   position: absolute;
   width: 40%;
   left: 50%;
@@ -151,6 +153,7 @@ button.bt {
   animation-name: apear1;
   animation-duration: 0.5s;
   box-shadow: 10px 10px 5px #aaaaaa;
+  border-radius: 8px;
 }
 
 .hide {
@@ -248,7 +251,7 @@ li.nav:hover {
 
 .listing {
   border-top: 1px solid grey;
-  width: 150px;
+  width: 200px;
   height: 200px;
   display:block;
   width: auto;
@@ -274,6 +277,7 @@ hr{
 }
 .list {
 }
+
 .listing:hover {
   background: #e1e1e1;
 }
@@ -342,11 +346,35 @@ input {
 
 }
 
+.username {
+  color: purple;
+  font-size: 20px;
+  float:right;
+  margin-right: 10px;
+   font-weight: bold;
+}
+
 @media screen and (max-width: 800px) {
   .setting {
     display: none;
   }
-  .sidebar {
+
+  .modal-box {
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    margin-left: -35%;
+
+    z-index: 2;
+    height: 250px;
+    min-width: 400px;
+    max-width: 700px;
+    background: white;
+    animation-name: apear1;
+    animation-duration: 0.5s;
+    box-shadow: 10px 10px 5px #aaaaaa;
+  }
+  .sidebar1 {
     position: fixed;
     background: purple;
     z-index: 2;
@@ -381,7 +409,6 @@ input {
   .menu-icon {
     display: block;
   }
-
 
  @keyframes apears {
     from {
