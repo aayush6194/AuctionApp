@@ -12,8 +12,7 @@ class Dashboard extends React.Component {
         <Side />
 
           <br />
-          
-          <center>  <img src="/profile.png" /></center>
+                    <center>  <img src="/profile.png" /></center>
          </div>
     );
   }

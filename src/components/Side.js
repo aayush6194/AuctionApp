@@ -5,8 +5,7 @@ const Side = ()=>{return(
 
 
         <ul>
-            
-        </ul>
+                    </ul>
     </div>);};
 
 export default Side;

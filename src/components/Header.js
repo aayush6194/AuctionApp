@@ -1,6 +1,5 @@
 import React from 'react';
 import MenuIcon from './MenuIcon';
-
 class Header extends React.Component {
   constructor(props){
     super(props);
