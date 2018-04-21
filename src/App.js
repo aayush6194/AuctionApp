@@ -27,8 +27,9 @@ class App extends React.Component {
         itemImage:"image.jpg",
         productOwner:"nisha",
         status:"live",
+        
       }}];
-      this.state = { navbar: "hide", modal: "hide", cover: "hide",
+      this.state = { navbar: "hide", modal: "hide", cover: "hide", selected : "",
                     login :false, admin: false, username : "", password:"",
                     term: "", arry:  ["poop","dog", "doggy","poop","dog", "doggy"],
                     required: ["poop","dog", "doggy","poop","dog", "doggy"], json:  this.fakeJson    };
@@ -103,7 +104,7 @@ class App extends React.Component {
        <Modal display={this.state.modal} modal={this.modalOff.bind(this)}   />
 
        <Switch>
-         <Route exact path="/"  render={()=> <Home dataAll={this.state.arry} data={this.state.required} modal={this.modal.bind(this)} modalOff={this.modalOff.bind(this)}/>}/>
+         <Route exact path="/"  render={()=> <Home details={this.state.json} dataAll={this.state.arry} data={this.state.required} modal={this.modal.bind(this)} modalOff={this.modalOff.bind(this)}/>}/>
          <Route path="/profile" component={Profile} />
          <Route path="/about" component={About} />
          <Route path="/dashboard" render={()=> <Dashboard name="ss"/>} />

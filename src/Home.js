@@ -26,14 +26,14 @@ class Home extends React.Component {
           <h1>Home</h1>
           <br />
           <input
-            class="input"
+            className="input"
             placeholder="poop"
             type="text"
             onChange={this.handleChange.bind(this)}
           />
-          <button class="bt search" onClick={this.search.bind(this)}>Search</button>
+          <button className="bt search" onClick={this.search.bind(this)}>Search</button>
         </center>
-        <Data data= {this.objects} modal={this.props.modal} modalOff={this.props.modalOff}/>
+        <Data details={this.props.details} data= {this.objects} modal={this.props.modal} modalOff={this.props.modalOff}/>
           <center><hr /></center>
       </div>
     );

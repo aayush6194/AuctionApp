@@ -269,6 +269,12 @@ li.nav:hover {
   color: purple;
    text-transform: capitalize;
 }
+
+.item-artist{
+  font-size: 15px;
+  color: purple;
+   text-transform: capitalize;
+}
 hr{
     border-top: 1px solid grey;
     width: 80%;
@@ -353,9 +359,35 @@ input {
    font-weight: bold;
 }
 
+.detail-container{
+margin-left: 70%;
+}
+.detail{
+
+  text-align: justify;
+  color: purple;
+}
+
+.price{
+  font-weight: bold;
+  font-size: 25px;
+  color: red;
+}
 @media screen and (max-width: 800px) {
   .setting {
     display: none;
+  }
+
+  .detail-container{
+  margin-left: 40%;
+  }
+  .detail{
+
+    }
+
+  .price{
+    font-weight: bold;
+    font-size: 18px;
   }
 
   .modal-box {
@@ -446,4 +478,27 @@ input {
   transform: rotate(-45deg);
 }
 
+}
+@media screen and (max-width: 550px) {
+  .container{width:95%; margin-left: 5%;}
+  .item-pic{width:150px; height: 150px;}
+  .modal-box {
+
+    width: 40%;
+    left: 40%;
+    margin-left: -20%;
+
+    z-index: 2;
+    height: 250px;
+    min-width: 250px;
+    max-width: 700px;
+    background: white;
+    animation-name: apear1;
+    animation-duration: 0.5s;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border-radius: 8px;
+  }
+ button{
+   display: block;
+ }
 }

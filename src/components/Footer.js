@@ -8,7 +8,7 @@ import React from 'react';
         <br />
         <div className="border">
           <input className="footer-input" placeholder="Type you email here..." type="text" />
-          <button class="bt join">Join</button>
+          <button className="bt join">Join</button>
         </div>
         <br />
        <a href="http://www.google.com">  <img

@@ -7,7 +7,7 @@ function Navbar(props) {
     <div>
       <div className={css}>
         <ul>
-         <li onClick={props.navbar}>  <icon href="#" class="close" /></li>
+         <li onClick={props.navbar}>  <icon href="#" className="close" /></li>
           <Link to="/" className="none">
             <li className="nav first">Home</li>
           </Link>

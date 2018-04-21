@@ -11,7 +11,8 @@ class Data extends React.Component {
  return (
     <div className="container" >
       <ul className="list" >
-      <DataItem data={this.props.data} modal={this.props.modal} modalOff={this.props.modalOff}/>
+      <DataItem details={this.props.details} data={this.props.data} modal={this.props.modal} modalOff={this.props.modalOff}/>
+  
         </ul>
     </div>
   );

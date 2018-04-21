@@ -17,10 +17,11 @@ class Header extends React.Component {
         <img className="logoTop"
         src="/logo.jpg"/>
         <span className="login-container" >
-        <input className="login" type="text" placeHolder="Email.." onChange= {this.props.input}/>
-        <input className="login" type="password" placeHolder="Password.."  onChange= {this.props.input2}/>
+        <form>
+        <input  className="login" type="text" placeholder="Email.." onChange= {this.props.input}/>
+        <input className="login" type="password" placeholder="Password.."  onChange= {this.props.input2}/>
         <button className="bt search" id="login" onClick={this.props.submitData}>LOGIN</button>
-        </span>
+      </form>  </span>
 
         <MenuIcon navbar ={this.props.navbar}/>
 
@@ -31,7 +32,7 @@ class Header extends React.Component {
         return(<div className="header">
           <img className="logoTop"
           src="/logo.jpg"/>
-          <span class="username"> Welcome, {this.props.username}</span>
+          <span className="username"> Welcome, {this.props.username}</span>
         </div>);
       }
     else
