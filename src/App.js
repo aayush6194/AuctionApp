@@ -16,23 +16,23 @@ class App extends React.Component {
       super(props);
       this.fakeJson = [{item:{
         lotNumber:"123",
-        artistName:"Ayushi",
-        itemName:"The Ayush Noob",
+        artistName:"Ayush",
+        itemName:"The Item",
         categoryName:"painting",
         classification:"animal",
-        description:"its painting by poop",
+        description:"its painting by artist",
         auctionItemAddedDate:"2018/02/01",
         itemProducedDate:"1991/02/01",
         estimatedPrice:"$0.1",
         itemImage:"image.jpg",
         productOwner:"nisha",
         status:"live",
-        
+
       }}];
       this.state = { navbar: "hide", modal: "hide", cover: "hide", selected : "",
                     login :false, admin: false, username : "", password:"",
-                    term: "", arry:  ["poop","dog", "doggy","poop","dog", "doggy"],
-                    required: ["poop","dog", "doggy","poop","dog", "doggy"], json:  this.fakeJson    };
+                    term: "", arry:  ["Item1","Item2", "Item3","Item4","Item5", "Item6"],
+                    required:["Item1","Item2", "Item3","Item4","Item5", "Item6"], json:  this.fakeJson    };
     //  this.modal = this.modal.bind(this);
     }
 
