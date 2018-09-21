@@ -37,8 +37,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-      window.addEventListener("resize", () => {this.setState({ navbar: "hide" });});
-      window.addEventListener('resize', function () { "use strict"; window.location.reload(); });
+   
    }
 
     modal() {
